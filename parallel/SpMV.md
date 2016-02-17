@@ -7,7 +7,7 @@ Sparse Matrix-Vector Multiplication
 CSR（Compressed Sparse Row）とか何種類かが提案されている
 
 NVIDIAの人が出してるドキュメントがまとまっているらしい
-http://www.nvidia.com/docs/IO/66889/nvr-2008-004.pdf
+http://www.nvidia.com/object/nvidia_research_pub_001.html
 
 
 
