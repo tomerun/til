@@ -2,6 +2,9 @@
 
 ファイルを分けるほどでもない、調べた単語について列挙していく
 
+* B/F
+	* Byte per Flops
+	* 演算性能とメモリバンド幅の関係
 * STREAM benchmark
 	* メモリバンド幅を計測するベンチマーク
 	* [公式サイト](https://www.cs.virginia.edu/stream/) に過去の計算機の結果が載っている
