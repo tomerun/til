@@ -2,7 +2,17 @@
 
 ファイルを分けるほどでもない、調べた単語について列挙していく
 
-* 玉
+
+* PO
+	* Purchase Order
+* QPI
+	* Intelが作ったバス規格。QuickPath Interconnectの略
+	* CPUとチップセットなどをpeer-to-peerでつなぐ（つまり、共有バスではない）
+	* 2009年、Nehalem以降で採用
+* QSPI
+	* Queued Serial Periferal Interface
+	* バス規格の一つ
+* 玉（弾？）
 	* ストレージデバイスのことを指す（語源は謎）
 * axpy
 	* `a * x + y` の計算
