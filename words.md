@@ -3,6 +3,11 @@
 ファイルを分けるほどでもない、調べた単語について列挙していく
 
 
+* EDA
+	* Electronic Design Automation
+	* 主なベンダーはシノプシス・ケイデンス・メンターグラフィックス
+* PCB
+	* Printed Circuit Board
 * PO
 	* Purchase Order
 * QPI
