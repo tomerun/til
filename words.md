@@ -2,7 +2,8 @@
 
 ファイルを分けるほどでもない、調べた単語について列挙していく
 
-
+* SPA
+  * Single Page Application
 * ETL
 	* Extract, Transform, Load
 	* データを処理する流れを表す。データウェアハウス界で使われる言葉
