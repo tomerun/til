@@ -22,7 +22,7 @@ Shift+Enter で打ち込んだコマンドが実行される
 
 ## matplotlibのグラフをインラインで表示する
 
-`matplotlib inline` を実行しておくと、matplotlibの画像がnotebook上で表示されるようになる。
+`%matplotlib inline` を実行しておくと、matplotlibの画像がnotebook上で表示されるようになる。
 
 グラフのスタイルは、 `plt.style.use(スタイル名)` で変更できる。
 利用できるスタイルの一覧は `plt.style.available` で
