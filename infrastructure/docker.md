@@ -132,6 +132,8 @@ Dockerfileに記述するコマンド
 * CMD
   * runしたときに実行するコマンド
 
+Dockerfileの完全なリファレンスは https://docs.docker.com/engine/reference/builder/
+
 
 ## jupyter notebookを実行する
 
