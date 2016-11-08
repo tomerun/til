@@ -1,6 +1,6 @@
 # MySQLdb
 
-MySQL(MariaDBも)に接続するライブラリ、MySQLdbについて
+MySQL(MariaDBにも対応)に接続するライブラリ、MySQLdbについて
 
 ## connection, cursorのクローズ
 
@@ -8,12 +8,13 @@ connection オブジェクトを with 文に渡したら、cursor オブジェ�
 
 ```py
 import MySQLdb
-with MySQLdb.connect(...) db:
+with MySQLdb.connect(...) as db:
     print(db)
 # => <MySQLdb.cursors.Cursor object at 0x10cb91080>
 ```
 
-これは、Connectionクラスの `__enter__()` ではcursorを作って返しているため。また、 `__exit__()` でconnectionをcloseしているわけでもない。
+これは、Connectionクラスの `__enter__()` ではcursorを作って返しているため。
+また、 `__exit__()` でconnectionをcloseしているわけでもない。
 
 参照：http://stackoverflow.com/questions/5669878/when-to-close-cursors-using-mysqldb
 
