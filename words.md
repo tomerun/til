@@ -2,6 +2,8 @@
 
 ファイルを分けるほどでもない、調べた単語について列挙していく
 
+* BSP
+  * Bulk Synchronous Parallel
 * SPA
 	* Single Page Application
 * ETL
