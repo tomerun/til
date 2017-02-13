@@ -2,6 +2,8 @@
 
 ファイルを分けるほどでもない、調べた単語について列挙していく
 
+* MVCC
+  * MultiVersion Concurrency Control
 * BSP
   * Bulk Synchronous Parallel
 * SPA
