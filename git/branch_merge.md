@@ -18,3 +18,14 @@ mergeだと全ファイルのマージになってしまうが、特定のファ
 `git checkout 元ブランチ名 -- ファイルパス` で現ブランチへ取得できる。
 
 
+## 前にチェックアウトしていたブランチに戻る
+
+'-' が1つ前のブランチを表すことになり、 `git checkout -` で前にチェックアウトしていたブランチに戻れる。
+
+git-checkoutのヘルプより
+```
+           As a special case, the "@{-N}" syntax for the N-th last branch/commit checks out branches
+           (instead of detaching). You may also specify - which is synonymous with "@{-1}".
+```
+
+
