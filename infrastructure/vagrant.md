@@ -31,6 +31,20 @@ $ vagrant halt             # VM電源OFF
 
 ※vagrantは、 `vagrant init` 時に鍵ペアを作成してそれを鍵として使う。公開鍵は仮想マシンの `~/.ssh/authorized_keys` に書かれ、秘密鍵はvagrant実行ディレクトリの `.vagrant` 内に保存される。この秘密鍵のパスは `vagrant ssh-config` で確認できる
 
+### scpでvagrant内からホストへファイルをコピー
+
+`vagrant ssh-config` するとSSHのポート番号がわかるので、 `scp -P` で指定する
+
+```
+$ vagrant ssh-config
+Host default
+  HostName 127.0.0.1
+  User vagrant
+  Port 2201
+  (snip)
+$ scp -P 2201 vagrant@localhost:path/to/file .
+```
+
 
 ## Guest Additions
 
