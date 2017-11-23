@@ -45,7 +45,6 @@ Host default
 $ scp -P 2201 vagrant@localhost:path/to/file .
 ```
 
-
 ## Guest Additions
 
 ```
@@ -55,4 +54,15 @@ $ vagrant vbguest                         # Guest Additionsをインストール
 
 プラグインの細かい設定などはここに https://github.com/dotless-de/vagrant-vbguest/blob/master/Readme.md
 
+## 共有ディレクトリの所有者
+
+ホストとゲストで共有しているディレクトリでは、所有者がvagrant:vagrantになり、chownしても変更できない。
+Vagrantfileの共有設定を書くところで、 `mount_options` に dmode, fmodeを書くことでパーミッションを指定できる。前者がディレクトリ、後者がファイル。
+この仕様、公式に書かれてないんだけど…
+
+```
+  config.vm.synced_folder "src", "/home/user/shared", mount_options: ['dmode=777', 'fmode=777']
+```
+
+また、 `type: 'rsync'` で共有しているディレクトリでは、そもそもこの問題は起きないっぽい。共有というかコピーしているんだからそりゃそうか
 
