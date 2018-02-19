@@ -14,9 +14,21 @@ tmuxを使えるようにしておこうかと
 デフォルトのprefixである `Ctrl-b` はカーソル移動とバッティングするので `Ctrl-g` に変えておく。
 
 ```
-set-option -g `prefix C-g`
+set-option -g prefix C-g
 unbind-key C-b
 bind-key C-g send-prefix
+```
+
+マウススクロールでコピーモードにする（というか、各ペインの内容がスクロールされるようにする）
+
+```
+set-option -g mouse on
+```
+
+Escキーがすぐ反応するようにする
+
+```
+set -s escape-time 0
 ```
 
 tmuxのコピーモードではtmux内だけのバッファにコピーされてしまうのでOSのクリップボードにコピーされるようにする
